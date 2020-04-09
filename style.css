@@ -1,0 +1,42 @@
+body {
+  font-family: "Raleway", serif;
+}
+main {
+  background-image: url(images/001.jpg);
+  padding: 50px 100px;
+}
+header {
+  margin-bottom: 30px;
+}
+header h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+header p {
+  display: block;
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+input,
+textarea {
+  background-color: #18d1d1;
+  color: white;
+
+  border: 3px;
+}
+.cont_info h3 {
+  margin-bottom: 0;
+}
+.cont_info p {
+  margin-top: 0;
+}
