@@ -54,10 +54,15 @@ input {
 .form-field .input:focus {
   border: 1px solid navy;
 }
+input[type="checkbox"] {
+  box-sizing: border-box;
+}
 
 .keep {
   margin-bottom: 30px;
   height: 25px;
+  display: flex;
+  align-items: center;
 }
 
 button {
