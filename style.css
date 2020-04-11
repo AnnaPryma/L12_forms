@@ -1,73 +1,77 @@
-body {
-  font-family: "Raleway", serif;
-}
-main {
+.form {
+  width: 350px;
   height: 500px;
-  background-image: url(images/001.jpg);
+  background-color: violet;
+  margin: 30px auto;
+  padding: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  background-image: url(/L12_forms/images.jpg);
   background-size: cover;
-  padding: 50px 100px;
+  box-shadow: 0 0 20px rgba(2, 4, 120, 0.1);
 }
-header {
-  margin-bottom: 30px;
+ul li {
+  list-style: none;
 }
-header h1 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 800;
-}
-.container {
+ul {
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
+  padding-left: 0;
 }
-header p {
-  display: block;
-  text-align: center;
-  width: 500px;
-  margin: 0 auto;
+ul li a {
+  color: white;
+  text-decoration: none;
 }
-.form {
+ul li a:active {
+  text-decoration: underline;
+  text-decoration-color: tomato;
+}
+.form_body {
+  margin-top: 50px;
+}
+.form-field {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  margin-bottom: 10px;
 }
-.form input {
-  background-color: #18d1d1;
-  color: white;
-  display: block;
-  margin-top: 10px;
-  border: none;
+input {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 35px;
+}
+.form-field label {
   line-height: 30px;
-  padding-left: 10px;
 }
-.form ::placeholder {
-  color: white;
+.form-error {
+  color: red;
+  visibility: hidden;
+  font-size: 12px;
+}
+.form-field .input_error:invalid + .form-error {
+  visibility: visible;
+}
+.form-field .input:focus {
+  border: 1px solid navy;
 }
 
-.form textarea {
-  background-color: #18d1d1;
+.keep {
+  margin-bottom: 30px;
+  height: 25px;
+}
+
+button {
+  width: 350px;
   color: white;
-  display: block;
-  margin-top: 10px;
+  background-color: #23ae92;
   border: none;
-
-  padding-left: 10px;
+  height: 50px;
 }
-
-.cont_info h3 {
-  margin-bottom: 0;
-}
-.cont_info p {
-  margin-top: 0;
-}
-footer {
-  background-color: #262626;
-  color: lightgray;
+.add info {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 100px;
+  font-size: 10px;
 }
-footer span {
-  color: rgb(255, 102, 128);
+.add info span {
+  font-size: 10px;
 }
